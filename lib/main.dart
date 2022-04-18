@@ -32,10 +32,10 @@ class _State extends State<MyApp> {
                         value: _value1,
                         onChanged: (bool? value) =>
                             setState(() => _value1 = value!),
-                        title: Text('Ashutosh'),
+                        title: const Text('Ashutosh'),
                         controlAffinity: ListTileControlAffinity.leading,
                         //subtitle: Text('Subtitle'),
-                        secondary: Icon(Icons.people),
+                        secondary: const Icon(Icons.people),
                         activeColor: Colors.red,
                       ),
                     ),
@@ -44,10 +44,10 @@ class _State extends State<MyApp> {
                         value: _value2,
                         onChanged: (bool? value) =>
                             setState(() => _value2 = value!),
-                        title: Text('Ajit Sir'),
+                        title: const Text('Ajit Sir'),
                         controlAffinity: ListTileControlAffinity.leading,
                         //subtitle: Text('Subtitle'),
-                        secondary: Icon(Icons.people),
+                        secondary: const Icon(Icons.people),
                         activeColor: Colors.red,
                       ),
                     ),
@@ -76,9 +76,9 @@ class _State extends State<MyApp> {
           child: Center(
             child: Column(
               children: <Widget>[
-                Text('Select a person:'),
+                const Text('Select a person:'),
                 ElevatedButton(
-                    onPressed: _showBottom, child: Text('Show names')),
+                    onPressed: _showBottom, child: const Text('Show names')),
               ],
             ),
           )),
